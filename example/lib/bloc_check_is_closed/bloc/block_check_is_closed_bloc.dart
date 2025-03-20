@@ -85,13 +85,6 @@ final class BlockCheckIsClosedBloc extends Bloc<BlockCheckIsClosedEvent, BlockCh
     // expect_lint: bloc_check_is_closed
     emit(BlockCheckIsClosedInitial());
 
-    Future.delayed(Durations.medium3, () async {
-      emit(BlockCheckIsClosedInitial());
-    });
-
-    Future.delayed(Durations.medium4).then((value) {
-      print(value);
-    });
   }
 
   void _test() {}
